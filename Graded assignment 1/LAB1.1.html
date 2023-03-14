@@ -1,0 +1,96 @@
+<!DOCTYPE HTML >
+<html>
+    <head>
+    <title>LAB 1.1</title>
+    <style> 
+    header{
+        background-color: red;
+        text-align: end;
+        color: black;
+        padding: 10px;
+    }
+    nav {
+        background-color: grey;
+        display :flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul{
+        
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    ul a:hover{
+        background-color: black;
+    }
+    li {
+        margin-left: 10px;
+        position: relative;
+    }
+    a {
+        background-color: grey;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+    }
+
+    li.dropdown:hover .dropdown-menu{
+        display: block;
+    }
+
+    .dropdown-menu { 
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: lightblue;
+        color: blue;
+        padding: 10px
+    }
+
+    .dropdown-menu li{
+        margin: 0;
+    }
+
+    .dropdown-menu a {
+        background-color: lightblue;
+        color: blue;
+        padding: 5px 10px;
+    }
+
+    .dropdown-menu a:hover{
+        background-color: black;
+    }
+
+     </style>
+    </head>
+    <body>
+    <header>
+            <h1> Demo of Dropdown</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li class="dropdown">
+                <a href="#">Link 2</a>
+                <ul class="dropdown-menu">
+            <li><a href="#">DD_link_1</a></li>
+            <li><a href="#">DD_link_2</a></li>
+            <li><a href="#">DD_link_3</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">Link 3</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">DD_link_1</a></li>
+                <li><a href="#">DD_link_2</a></li>
+                <li><a href="#">DD_link_3</a></li>
+            </ul>
+        </li>
+        </ul>
+       </nav>
+    </body>
+</html>
